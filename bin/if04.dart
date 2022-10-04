@@ -8,4 +8,13 @@
         c: integer
     returns:
         integer: the number of positive numbers in the given numbers */
-void main() {}
+int func(int a,b,c){
+    if(a>0){
+        return(a);
+    } 
+      return(b);
+}
+void main() {
+    print(func(-4,5,6));
+    
+}

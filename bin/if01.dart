@@ -7,12 +7,12 @@
     Returns:
         a: a increased by 1 if positive, else unchanged.
  */
- int func(int a){
-    if(a>0){
-        print(a+1); 
+int func(int a){
+          if(a>0){
+        return(a+1); 
     }
     return(a);
  }
 void main() {
-        print(func(5));
+        print(func(-5));
     }
