@@ -8,16 +8,17 @@
         a: integer*/
 int func(int number){
     if(number>0){
-        return(number+1);
+        number += 1;
     } 
       if(number<0){
-        return(number+2);
+       number -= 2;
     }
-    int b;
-    b = 10;
-        return(b);
+     if(number==0){
+       number += 10;
+    }
+        return(number);
 }
 void main() {
-    print(func(0));
+    print(func(-2));
     
 }

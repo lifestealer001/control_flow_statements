@@ -11,4 +11,21 @@
     Returns:
         string: the message to print */
 
-void main() {}
+       String func(int a){
+          String s = '';
+            if ( a%10<1 && a%2==0){
+                s = 'two-digit even number';
+            }
+               if (a%10<1 && a%2==1){
+                s = 'two-digit odd number';
+            }       if ( a%100<10 && a%2==0){
+                s = 'three-digit even number';
+            }
+               if (a%100<10 && a%2==1){
+                s = 'three-digit odd number';
+            }
+            return s;
+         }
+void main() {
+    print(func(4));
+}

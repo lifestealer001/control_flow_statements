@@ -11,4 +11,38 @@
         c: third number
     Returns:
         string: string with the result*/
-void main() {}
+String func(int a,b,c){
+    int sum = 0;
+    int sum1 = 0;
+    String s = '';
+    if(a>0){
+        sum += 1;
+    } 
+    if(b>0){
+        sum += 1;
+    } 
+    if(c>0){
+        sum += 1;
+    } 
+        if(a<0){
+        sum1 += 1;
+    } 
+    if(b<0){
+        sum1 += 1;
+    } 
+    if(c<0){
+        sum1 += 1;
+    }
+    if(sum>sum1){
+        s = 'there are a lot of positive numbers';
+    }
+        if(sum<sum1){
+        s = 'there are a lot of negative numbers';
+    }
+    return s;
+}
+void main() {
+    print(func(-4,5,6));
+    
+}
+

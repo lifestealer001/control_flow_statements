@@ -11,16 +11,18 @@
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False. */
 
 bool func(int a){
-    int b,c,d;
-    b = a%10;
-    c = a~/10;
-    d = b*10+c;
-    if(d=<a){
-    return (b*10+c =< a);
+    bool s = true;
+    int d;
+    d = a % 10 *10 + a ~/ 10;
+    if(d <= a){
+    s = true;
     }
-    return(b*10+c => a);
+    if (d > a){
+    s = false;
+    }
+    return s;
 }
 void main() {
-    print(func(15));
+    print(func(51));
     
 }
